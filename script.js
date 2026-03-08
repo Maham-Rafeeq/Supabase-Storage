@@ -138,7 +138,7 @@ window.savepdate =async function(){
      let newName = document.getElementById("rename-input").value.trim();
 
         if (!newName) {
-            alert("Naya naam likho!");
+            alert("Fill Name");
             return;
         }
 
@@ -149,7 +149,7 @@ window.savepdate =async function(){
         if (error) {
             alert("Error: " + error.message);
         } else {
-            alert("✅ Rename ho gaya!");
+            alert("Renamed");
             model.classList.remove('d-flex');
             model.classList.add('d-none');
             document.getElementById("rename-input").value = '';
@@ -159,5 +159,6 @@ window.savepdate =async function(){
 
 }
     
+
 
 window.rename= rename
