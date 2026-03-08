@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  @media (min-width: 992px) {
+    #uploadForm {
+        width: 50% !important;
+    }
+}
+
+</style>
+<body>
+    <!-- main-form -->
+    <form action="#" id="uploadForm" href="javascript:void(0);" onsubmit="uploadefile()" class=" h-auto p-5 bg-light border border-dark border-2 rounded-2 mx-auto my-5 text-center">
+        <h1>Update Profile</h1>
+        <input type="file" id="userimg" accept="image/jp,image/png,image/webg,image/avif" class="d-block w-100 mx-auto border border-2 m-5">
+        <button type="submit" class=" px-4 py-2 fs-16 border bg-primary rounded-2 text-white fw-bold">Upload</button>
+    </form>
+    <div id="img-container" class="d-flex flex-column flex-lg-row flex-wrap justify-content-around align-items-center gap-3 p-3">
+        
+    </div>
+<!-- update-model -->
+    <div id="model" class="d-none w-100 h-100 position-fixed top-0 left-0 right-0 text-center justify-content-center align-items-center" style="background-color: rgba(0,0,0,0.8); z-index: 999; transition: 0.2s ease-in;">
+    <div class="updateprofile p-5 h-50 border rounded-2 text-white"  style="min-width: 300px; min-height: 300px;">
+        <h1 class="text-center m-3">Update Profile</h1>
+<input type="file" id="updateInput" accept="image/jp,image/png,image/webg,image/avif" class="border p-2 w-100">
+<br><br>
+<button onclick="saveupdate()"  id="savebtn" class="px-4 py-2 fs-16 border border-dark bg-primary rounded-2 text-white fw-bold m-2">Save Changes</button>
+<button onclick="cancelupdate()"  id="cancelbtn" class="px-4 py-2 fs-16 border border-dark bg-primary rounded-2 text-white fw-bold ">cancel</button>
+</div>
+</div>
+<!-- rename-model -->
+    <div id="rename-model" class="d-none w-100 h-100 position-fixed top-0 left-0 right-0 text-center justify-content-center align-items-center" style="background-color: rgba(0,0,0,0.8); z-index: 999; transition: 0.2s ease-in;">
+    <div class="updateprofile p-5 h-50 border rounded-2 text-white"  style="min-width: 300px; min-height: 300px;">
+        <h1 class="text-center m-3">Rename</h1>
+<input type="text" placeholder="Enter Name" id="rename-input"  class="border p-2 w-100">
+<br><br>
+<button onclick="savepdate()"  id="savebtn" class="px-4 py-2 fs-16 border border-dark bg-primary rounded-2 text-white fw-bold m-2">Save Changes</button>
+<button onclick="cancelupdate()"  id="cancelbtn" class="px-4 py-2 fs-16 border border-dark bg-primary rounded-2 text-white fw-bold ">cancel</button>
+</div>
+</div>
+
+ <script type="module" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
