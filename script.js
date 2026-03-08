@@ -149,7 +149,7 @@ window.savepdate =async function(){
         if (error) {
             alert("Error: " + error.message);
         } else {
-            alert("Renamed");
+            alert("Succesfully Renamed");
             model.classList.remove('d-flex');
             model.classList.add('d-none');
             document.getElementById("rename-input").value = '';
@@ -162,3 +162,4 @@ window.savepdate =async function(){
 
 
 window.rename= rename
+
